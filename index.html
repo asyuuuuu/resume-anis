@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anis's Space</title>
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <style>
+        .circle-picture {
+            max-width: 250px;
+            margin: 0 auto;
+        }
+
+        .circle-picture img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        @media (min-width: 768px) {
+            .circle-picture {
+                max-width: 300px;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .circle-picture {
+                max-width: 350px;
+            }
+        }
+
+        .hero-content {
+            padding: 2rem 1rem;
+        }
+
+        @media (min-width: 768px) {
+            .hero-content {
+                padding: 3rem 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar sticky-lg-top navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Watch out for Anis!</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Me!</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">My Projects!</a>
+                    </li>
+                </ul>
+                <span class="navbar-text text-body-tertiary" style="--bs-text-opacity: .5;">
+                    &COPY; Anis's Space.
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero bg-body-primary text-center text-light pb-3">
+        <div class="bg-video position-relative">
+            <video autoplay muted loop class="w-100" alt="Video by Pressmaster">
+                <source src="asset/data.mp4" type="video/mp4">
+            </video>
+            <div
+                class="bg-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center py-5">
+                <div class="container">
+                    <div class="row flex-column flex-md-row align-items-center">
+                        <div class="col-md-6 mb-3 mb-md-0">
+                            <h1 class="display-1">Anis's Space</h1>
+                            <p class="lead">Welcome to my space! I am Anis, a Data Scientist.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="circle-picture">
+                                <img src="asset/anis01.png" alt="Profile Picture" class="rounded-circle img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skill Cards Section (3 cards) -->
+    <section class="skills bg-body-tertiary text-center py-5">
+        <div class="container">
+            <h2 class="display-4">My Skills</h2>
+            <p class="lead">I am a Data Scientist with a passion for Machine Learning and Data Analysis.</p>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Machine Learning</h5>
+                            <img src="asset/machinelearning.png" alt="Machine Learning" class="card-img-top">
+                            <p class="card-text">I have experience in building Machine Learning models using Python and
+                                Scikit-Learn.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Data Analysis</h5>
+                            <img src="asset/analysis.png" alt="Data Analysis" class="card-img-top">
+                            <p class="card-text">I have experience in analyzing data using Python and Pandas.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Data Visualization</h5>
+                            <img src="asset/visualisation.png" alt="Data Visualization" class="card-img-top">
+                            <p class="card-text">I have experience in visualizing data using Python and Matplotlib.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section for interactive carousells -->
+    <section class="projects bg-body-primary text-grey py-5">
+        <div class="container">
+            <h2 class="display-4 text-center">Accredition</h2>
+            <p class="lead text-center">Here are some of my certifications proven my skills.</p>
+            <div class="row">
+                <div class="col-md-12"></div>
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="asset/Cert A.png" class="d-block w-100" alt="Project 1">
+                            <div class="carousel-caption d-none d-md-block bg-light opacity-50">
+                                <h3 style="color: indianred;">PowerBI Beginner</h3>
+                                <p style="color: indianred;">I completed this training on August 4th, 2024</p>
+                            </div>
+                        </div>
+                        <!-- <div class="carousel-item">
+                            <img src="asset/2.png" class="d-block w-100" alt="Project 2">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Project 2</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="asset/3.png" class="d-block w-100" alt="Project 3">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Project 3</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates.</p>
+                            </div>
+                        </div> -->
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section (Including Github and linkedin button) -->
+    <section>
+
+        <div class="container-fluid">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                </div>
+                <img src="asset/footer.png" class="card-img-bottom" alt="...">
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
